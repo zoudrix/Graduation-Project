@@ -1,0 +1,193 @@
+body{
+     background-color: #1E1E1E;
+     overflow-x:hidden;
+     font-family: 'Roboto', sans-serif;
+     width: 100%;
+     margin: 10px;
+     perspective: 500px;
+     
+}
+
+* li{
+    list-style: none;
+}
+
+.first{
+    position: relative;
+    width: 90%;
+    top:10 px;
+    margin: 10px auto;
+    text-align: center;
+
+}
+
+.first ul {
+    display: inline-block;
+}
+
+.first ul li {
+    display: inline-block;
+    padding:15px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.first ul li:after{
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  right:0%;
+  position: absolute;
+  background: linear-gradient(to right, #fc2547 50%, #ff5a00);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.first ul li:hover:after{
+ width: 100%; 
+  left: 0; 
+}
+
+.first img {
+    position: absolute;
+    left: 111px;
+    top: 14px;
+}
+
+.first i:first-of-type {
+    position: absolute;
+    right: 34px;
+    top: 32px;
+    color: #fff;
+    
+}
+.first i:last-of-type {
+    position: absolute;
+    right: 75px;
+    top: 17px;
+}
+
+.first i:hover{
+    cursor: -webkit-grab;
+    cursor: grab; 
+}
+
+.container1{
+    text-align: center;
+}
+
+.container1 p{
+    color: #6C6C6C;
+    font-family: Roboto, sans-serif;
+}
+ .container1 h1{
+    font-family: Roboto, sans-serif;
+    font-size: 54px;
+    color: #FAFAFA;
+ }
+ 
+ .container1 div{
+    background-color: #2B2C2D;
+    width: 50%;
+    margin: 10px auto;
+    height: 60px;
+    position: relative;
+    border-radius: 50px;
+ }
+ 
+ .container1 div input {
+    position: absolute;
+    top: 22px;
+    left: 40px;
+    width: 400px;
+    background-color:  #2B2C2D;
+    color: #6C6C6C;
+    border: none;
+    }
+    
+    .container1 div input:focus{
+     outline: none;
+     border: none;
+    }
+
+  .container1 div button {
+      border: none;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 200px;
+      height: 50px;
+      border-radius: 50px;
+      color: #fff;
+      background: linear-gradient(to right, #fc2547 50%, #ff5a00);
+      transition:all 1s ease-in-out;
+     
+ }
+ 
+ .container1 div button:focus{
+     outline: none;
+     border: none;
+ }
+ 
+ .container1 div button:hover{
+    cursor: grab;
+    background: linear-gradient(to left, #fc2547 50%, #ff5a00);
+    
+ }
+ 
+ .container1 div i{
+     color: #6C6C6C;
+     position: absolute;
+     top: 17px;
+    left: 14px;
+ }
+ .container1 ul{
+    position: absolute;
+    left: 0px;
+    top: 220px;
+ }
+ 
+ .fa{
+  padding: 10px;
+  font-size: 30px;
+  width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: #fff;
+}
+
+
+ .container1 img {
+    position: absolute;
+ }
+ 
+ .container1 img:first-of-type{
+     top: 200px;
+     right: -133px;
+     width: 400px;
+ }
+ 
+ .container1 img:nth-of-type(2){
+    top: 212px;
+    left: 156px;
+    width: 200px;
+ }
+ 
+  .container1 img:nth-of-type(3){
+    top: 171px;
+    right: 399px;
+    width: 60px;
+ }
+ 
+ .container1 img:last-of-type{
+    width: 150px;
+    left: 0;
+    top: 439px;
+ }
+ 

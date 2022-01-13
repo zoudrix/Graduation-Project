@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+                
+        <title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/table.css') }}">
+        <!-- <link rel="stylesheet" href="table.css"> -->
+                
+		
+         
+    </head>
+    <body>
+        <header class="first">
+            
+            <img src="https://megaone.acrothemes.com/food-delivery/img/logo.png" alt="logo">
+            <i class='fas fa-user-alt'></i>
+        </header>
+
+        <br><br><br><br><br><br><br>
+
+    	<div class="container1">
+            {% for vid in data %}
+            <video width="400" height="400" controls muted>
+                <source src={{url_for('static', filename=vid)}} type="video/mp4">
+            </video>
+
+            <br><br>
+
+            <form action = "predict" method = "POST"  >
+                <button type="submit" name = 'vid_name' class = "A" value = {{(vid)}}>Predict</button>
+            </form>
+            {% endfor %}
+        </div>
+    </body>
+</html>
+
+

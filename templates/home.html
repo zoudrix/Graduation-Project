@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+		<meta name="description" content="">
+                
+		<title></title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}">
+        <!-- <link rel="stylesheet" href="home.css"> -->
+        
+         
+    </head>
+    <body>
+        <header class="first">
+            
+            <img src="https://megaone.acrothemes.com/food-delivery/img/logo.png" alt="logo">
+            <i class='fas fa-user-alt'></i>
+        </header>
+        <br><br><br><br><br><br><br>
+        <form action = "upload" method = "POST" enctype = "multipart/form-data">
+            <div class="container1">
+                <h1>Moreover <br> your helper to keep you safe</h1>
+                <p>Moreover is a deep neural network model that can detect abnormal crowed behavior in videos. <br> Enjoy using it now.</p>
+                <br>
+
+                <div>
+                    <input type="file" name="vid_file" multiple><br><br>
+                    <button>Submit</button>
+                </div>
+
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>     
+                </ul>
+                
+            </div>
+        </form>  
+
+    </body>
+</html>
